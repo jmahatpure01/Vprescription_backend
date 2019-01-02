@@ -15,10 +15,10 @@ def process(request):
         tokens = nltk.wordpunct_tokenize(text)
         for token in tokens:
             print(token)
-            r = requests.get("https://www.practo.com/practopedia/api/v1/search?query=" + token + "&pincsode=560076")
+            r = requests.get("https://api.fda.gov/drug/ndc.json?search=generic_name:" + token + "&limit=1")
             if r.status_code == 200:
                 data = r.json()
                 if data:
-                    name_array.append(data[0]["display_text"])
+                    name_array.append(data["results"][0]["brand_name"])
 
     return HttpResponse(json.dumps(name_array), content_type='application/json', status=201)
