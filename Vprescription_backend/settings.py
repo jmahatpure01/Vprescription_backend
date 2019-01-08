@@ -25,7 +25,7 @@ SECRET_KEY = 'j+-nh0z!08*^3@o#+(ce9v&e&--*m-hq!rs=7t%ex%2mub74b0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.6', 'jmahatpure.ml']
+ALLOWED_HOSTS = ['192.168.1.6', 'jmahatpure.ml', '35.153.209.83']
 
 
 # Application definition
