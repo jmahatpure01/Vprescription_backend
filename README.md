@@ -1,2 +1,2 @@
 # Vprescription_backend
-Voice Prescription backend does medicine names extraction from a string. 
+Voice Prescription backend extract medicine names from a string using ntlk tokenization and FDA api. It is still in prototype phase.
